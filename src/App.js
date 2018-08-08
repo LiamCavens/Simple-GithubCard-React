@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CardList from './component/CardList';
+import CardList from './container/CardList';
 
 let data = [
   {
@@ -10,7 +10,7 @@ let data = [
     company: "Facebook"
   },
   {
-    name: "Ben Alpert",
+    name: "Paul O'Shannessy",
     avatar_url: "https://avatars.githubusercontent.com/u/8445?v=3",
     company: "Facebook"
   }
@@ -18,7 +18,7 @@ let data = [
 class App extends Component {
   render() {
     return (
-      <CardList />
+      <CardList cards={data}/>
     );
   }
 }
