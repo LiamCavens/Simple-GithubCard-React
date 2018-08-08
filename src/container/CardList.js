@@ -3,8 +3,10 @@ import Card from "./Card";
 
 export default class CardList extends Component {
   render() {
-    return <div>
+    return (
+      <div>
        {this.props.cards.map(card => <Card {...card} />)}
-      </div>;
+      </div>
+    );
   }
 }
